@@ -1,0 +1,282 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CF8D691-171F-4615-B844-7AC3DB1FB64A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Service_Center_Equipment_Management</RootNamespace>
+    <AssemblyName>EPROCE0063</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1" />
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1" />
+    <Reference Include="DevExpress.Data.v21.1" />
+    <Reference Include="DevExpress.Diagram.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1" />
+    <Reference Include="DevExpress.Printing.v21.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL_CS_Bin.cs" />
+    <Compile Include="BLL\BLL_CS_Issue_Note.cs" />
+    <Compile Include="BLL\BLL_CS_REC.cs" />
+    <Compile Include="BLL\BLL_CS_TRN.cs" />
+    <Compile Include="DAL\DAL_CS_Bin.cs" />
+    <Compile Include="DAL\DAL_CS_Issue_Note.cs" />
+    <Compile Include="DAL\DAL_CS_REC.cs" />
+    <Compile Include="DAL\DAL_CS_TRN.cs" />
+    <Compile Include="DAL\DatabaseConnectivity\Connection.cs" />
+    <Compile Include="DAL\DatabaseConnectivity\DBconnect.cs" />
+    <Compile Include="DAL\DataSource\DAL_DS_BinCard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAL_DS_BinCard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_portable.cs">
+      <DependentUpon>DAL_DS_portable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_portable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAL_DS_portable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_Return.cs">
+      <DependentUpon>DAL_DS_Return.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_Return.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAL_DS_Return.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_Service.cs">
+      <DependentUpon>DAL_DS_Service.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataSource\DAL_DS_Service.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAL_DS_Service.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\FORMS\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\FORMS\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\FORMS\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\FORMS\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\REPORTS\REC_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PAL\REPORTS\REC_Report.Designer.cs">
+      <DependentUpon>REC_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\REPORTS\TIN_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PAL\REPORTS\TIN_Report.Designer.cs">
+      <DependentUpon>TIN_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\REPORTS\TRN_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PAL\REPORTS\TRN_Report.Designer.cs">
+      <DependentUpon>TRN_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_BinCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_BinCard.Designer.cs">
+      <DependentUpon>UC_BinCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_IssueNote.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_IssueNote.Designer.cs">
+      <DependentUpon>UC_IssueNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_REC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_REC.Designer.cs">
+      <DependentUpon>UC_REC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_TRN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\UC_TRN.Designer.cs">
+      <DependentUpon>UC_TRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\WaitForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\USER CONTROLS\WaitForm2.Designer.cs">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PAL\FORMS\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\FORMS\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\REPORTS\REC_Report.resx">
+      <DependentUpon>REC_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\REPORTS\TIN_Report.resx">
+      <DependentUpon>TIN_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\REPORTS\TRN_Report.resx">
+      <DependentUpon>TRN_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\USER CONTROLS\UC_BinCard.resx">
+      <DependentUpon>UC_BinCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\USER CONTROLS\UC_IssueNote.resx">
+      <DependentUpon>UC_IssueNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\USER CONTROLS\UC_REC.resx">
+      <DependentUpon>UC_REC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\USER CONTROLS\UC_TRN.resx">
+      <DependentUpon>UC_TRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\USER CONTROLS\WaitForm2.resx">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="DAL\DataSource\DAL_DS_BinCard.xsc">
+      <DependentUpon>DAL_DS_BinCard.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_BinCard.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAL_DS_BinCard.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_BinCard.xss">
+      <DependentUpon>DAL_DS_BinCard.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_portable.xsc">
+      <DependentUpon>DAL_DS_portable.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_portable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAL_DS_portable.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_portable.xss">
+      <DependentUpon>DAL_DS_portable.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Return.xsc">
+      <DependentUpon>DAL_DS_Return.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Return.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAL_DS_Return.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Return.xss">
+      <DependentUpon>DAL_DS_Return.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Service.xsc">
+      <DependentUpon>DAL_DS_Service.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Service.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAL_DS_Service.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\DataSource\DAL_DS_Service.xss">
+      <DependentUpon>DAL_DS_Service.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\User.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
